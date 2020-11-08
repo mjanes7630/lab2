@@ -169,7 +169,7 @@
                         $("#totalScore").css({"color" : "red"});
                     }
                     else{
-                        $("#totalScore").attr("class","text-info");
+                        $("#totalScore").attr("color","green");
                         alert("Congratulations!You scored: " + score);
                     }
                     $("#totalAttempts").html(`Total Attempts: ${++attempts}`);
