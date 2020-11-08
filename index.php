@@ -22,10 +22,13 @@
                     $(this).css("background","rgb(255, 255, 0)");
                 });
                 
-                //not the greatest choice...
+                //I couldn't use filter as a way of determining if the
+                //image was correct, so I just used background color
                 $(".q10Choice").on("click", function(){
-                    $(".q10Choice").css("filter","");
-                    $(this).css("filter","grayscale(100%)");
+                    $(".q10Choice").css("background","");
+                    $(".q10Choice").css("filter", "");
+                    $(this).css("background","rgb(255, 255, 0)");
+                    $(this).css("filter", "grayscale(100%)");
                 });
                 
                 displayQ4Choices();
